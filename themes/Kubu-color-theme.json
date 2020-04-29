@@ -117,7 +117,8 @@
 		{
 			"name": "Integers and floating point numbers",
 			"scope": [
-				"constant.numeric.dec"
+				"constant.numeric.dec",
+				"constant.numeric.decimal.cpp"
 			],
 			"settings": {
 				"foreground": "#deb2ff",
@@ -150,11 +151,11 @@
 		{
 			"name": "Control flow",
 			"scope": [
-				"keyword.control.loop",
-				"keyword.operator.expression.of.js"
+				"keyword.control",
+				"keyword.operator.expression.of.js",
 			],
 			"settings": {
-				"foreground": "#FF4AAE",
+				"foreground": "#ff9fef",
 				"fontStyle": ""
 			}
 		},
@@ -168,20 +169,72 @@
 				"fontStyle": "bold"
 			}
 		},
-
-		// =======================================================================================
-		// PYTHON SPESIFIC
-		//=======================================================================================
 		{
-			"name": "Import keyword",
+			"name": "Types n' stuff",
 			"scope": [
-				"keyword.control.import.python"
+				"storage.modifier",
+				"meta.function.definition.parameters.cpp storage.type",
+				"storage.modifier.specifier.const.cpp",
+				"support.type",
+				"storage.type"
+			],
+			"settings": {
+				"foreground": "#7bcbff",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Include, import, and that sort of stuff",
+			"scope": [
+				// include and define for C++, C
+				"meta.preprocessor",
+				"keyword.control.directive.define.cpp",
+				"keyword.control.directive.include",
+
+				// import for python
+				"keyword.control.import.python",
+
+				// Java package definition
+				"storage.modifier.package.java",
+				"keyword.other.package.java"
 			],
 			"settings": {
 				"foreground": "#ff929b",
 				"fontStyle": ""
 			}
 		},
+		{
+			"name": "Naming for: classes, structs, and enums",
+			"scope": [
+				"entity.name.type.struct",
+				"entity.name.type.enum",
+				"entity.name.type.class",
+				"support.function.magic.python"
+			],
+			"settings": {
+				"foreground": "#9fece7",
+				"fontStyle": ""
+			}
+		},
+
+		// =======================================================================================
+		// JAVA STUFF
+		// =======================================================================================
+		// {
+		// 	"name": "Special colours for storage modifier's relating to classes.",
+		// 	"scope": [
+		// 		"meta.class.java meta.class.identifier.java storage.modifier.java",
+		// 		"meta.class.java storage.modifier.java"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#9FECE7",
+		// 		"fontStyle": ""
+		// 	}
+		// },
+
+		// =======================================================================================
+		// PYTHON SPESIFIC
+		//=======================================================================================
 		{
 			"name": "Special Python keywords",
 			"scope": [
@@ -193,41 +246,7 @@
 			}
 		},
 		{
-			"name": "Control flow keywords",
-			"scope": [
-				"keyword.control.flow.python",
-				"keyword.operator.logical.python"
-			],
-			"settings": {
-				"foreground": "#ff9fef",
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Functions, Classes & Type sigs",
-			"scope": [
-				"storage.type.function.python",
-				"storage.type.class",
-				"support.type"
-			],
-			"settings": {
-				"foreground": "#7bcbff",
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Class names & Special methods",
-			"scope": [
-				"entity.name.type.class",
-				"support.function.magic.python"
-			],
-			"settings": {
-				"foreground": "#9fece7",
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "",
+			"name": "Python Built-in functions special colour.",
 			"scope": [
 				"support.function.builtin.python"
 			],
@@ -256,7 +275,8 @@
 				"punctuation.definition.tag.begin"
 			],
 			"settings": {
-				"foreground": "#e7f5ff",
+				// "foreground": "#e7f5ff",
+				"foreground": "#FF9FEF",
 				"fontStyle": ""
 			}
 		},
@@ -282,9 +302,29 @@
 				"fontStyle": ""
 			}
 		},
+		// =======================================================================================
+		// C++, C#, C
+		// =======================================================================================
+		// {
+		// 	"name": "meta.function.definition.parameters.cpp",
+		// 	"scope": [
+		// 		"meta.function.definition.parameters.cpp storage.type",
+		// 		"storage.modifier.specifier.const.cpp"
+		// 		// "variable.parameter.cpp"
+		// 		// "variable.parameter.cpp",
+		// 		// "meta.function.definition.parameters.cpp"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#0FF000",
+		// 		"fontStyle": "bold"
+		// 	}
+		// },
+		// {
+		// 	"name": "C++"
+		// },
 
 		// =======================================================================================
-		// CUSTOM JSON.
+		// CUSTOM JSON level colours.
 		// =======================================================================================
 		{
 			"name": "JSON Key - Level 0",

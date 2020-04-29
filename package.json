@@ -17,5 +17,9 @@
                 "path": "./themes/Kubu-color-theme.json"
             }
         ]
+    },
+    "dependencies": {
+        "generator-code": "^1.2.12",
+        "yo": "^3.1.1"
     }
 }
