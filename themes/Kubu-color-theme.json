@@ -96,7 +96,8 @@
 		{
 			"name": "String inner contents",
 			"scope": [
-				"string"
+				"string",
+				"markup.inline.raw.string.markdown"
 			],
 			"settings": {
 				"foreground": "#ffdb99",
@@ -107,7 +108,8 @@
 			"name": "String outer quotes",
 			"scope": [
 				"punctuation.definition.string.begin",
-				"punctuation.definition.string.end"
+				"punctuation.definition.string.end",
+				"punctuation.definition.raw.markdown"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -140,8 +142,7 @@
 		{
 			"name": "Function parameters",
 			"scope": [
-				"variable.parameter.function",
-				"variable.language.special.self.python"
+				"variable.parameter.function"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -216,6 +217,17 @@
 				"fontStyle": ""
 			}
 		},
+		{
+			"name": "This/Self pointer/keyword",
+			"scope": [
+				"variable.language.this.java",
+				"variable.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#ffcb6b",
+				"fontStyle": ""
+			}
+		},
 
 		// =======================================================================================
 		// JAVA STUFF
@@ -233,7 +245,7 @@
 		// },
 
 		// =======================================================================================
-		// PYTHON SPESIFIC
+		// PYTHON
 		//=======================================================================================
 		{
 			"name": "Special Python keywords",
@@ -254,6 +266,19 @@
 				"foreground": "#7BCBFF",
 			}
 		},
+		{
+			"name": "Function decorators & Exceptions",
+			"scope": [
+				"support.type.exception.python",
+				"meta.function.decorator.python support.type.python",
+				"meta.function.decorator.python entity.name.function.decorator.python punctuation.definition.decorator.python"
+			],
+			"settings": {
+				"foreground": "#FF4AAE",
+				"fontStyle": ""
+			}
+		},
+		
 
 		// =======================================================================================
 		//  MARKUP LANGUAGES (HTML, XML, YML)
@@ -302,6 +327,61 @@
 				"fontStyle": ""
 			}
 		},
+
+		// =======================================================================================
+		// MARKDOWN
+		// =======================================================================================
+		{
+			"name": "Markdown header 1",
+			"scope": [
+				"heading.1.markdown"
+			],
+			"settings": {
+				"foreground": "#7bcbff",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown header 2",
+			"scope": [
+				"heading.2.markdown"
+			],
+			"settings": {
+				"foreground": "#deb2ff",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown header 3",
+			"scope": [
+				"heading.3.markdown"
+			],
+			"settings": {
+				"foreground": "#ff929b",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown header 4",
+			"scope": [
+				"heading.4.markdown"
+			],
+			"settings": {
+				"foreground": "#ffb982",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown header 5",
+			"scope": [
+				"heading.5.markdown"
+			],
+			"settings": {
+				"foreground": "#c3e88d",
+				"fontStyle": "bold"
+			}
+		},
+
 		// =======================================================================================
 		// C++, C#, C
 		// =======================================================================================
@@ -324,7 +404,7 @@
 		// },
 
 		// =======================================================================================
-		// CUSTOM JSON level colours.
+		// JSON 
 		// =======================================================================================
 		{
 			"name": "JSON Key - Level 0",
