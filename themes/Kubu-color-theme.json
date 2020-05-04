@@ -120,10 +120,11 @@
 			"name": "Integers and floating point numbers",
 			"scope": [
 				"constant.numeric.dec",
-				"constant.numeric.decimal.cpp"
+				"constant.numeric.decimal",
+				"constant.numeric.float"
 			],
 			"settings": {
-				"foreground": "#deb2ff",
+				"foreground": "#7BCBFF",
 				"fontStyle": ""
 			}
 		},
@@ -166,8 +167,8 @@
 				"keyword.operator"
 			],
 			"settings": {
-				"foreground": "#FF4AAE",
-				"fontStyle": "bold"
+				"foreground": "#FF9FEF",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -230,19 +231,12 @@
 		},
 
 		// =======================================================================================
+		// C++, C#, C
+		// =======================================================================================
+
+		// =======================================================================================
 		// JAVA STUFF
 		// =======================================================================================
-		// {
-		// 	"name": "Special colours for storage modifier's relating to classes.",
-		// 	"scope": [
-		// 		"meta.class.java meta.class.identifier.java storage.modifier.java",
-		// 		"meta.class.java storage.modifier.java"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#9FECE7",
-		// 		"fontStyle": ""
-		// 	}
-		// },
 
 		// =======================================================================================
 		// PYTHON
@@ -263,36 +257,34 @@
 				"support.function.builtin.python"
 			],
 			"settings": {
-				"foreground": "#7BCBFF",
+				"foreground": "#9FECE7",
 			}
 		},
 		{
 			"name": "Function decorators & Exceptions",
 			"scope": [
-				"support.type.exception.python",
 				"meta.function.decorator.python support.type.python",
 				"meta.function.decorator.python entity.name.function.decorator.python punctuation.definition.decorator.python"
 			],
 			"settings": {
-				"foreground": "#FF4AAE",
+				"foreground": "#9FECE7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Exceptions",
+			"scope": [
+				"support.type.exception.python",
+			],
+			"settings": {
+				"foreground": "#FF929B",
 				"fontStyle": ""
 			}
 		},
 		
-
 		// =======================================================================================
 		//  MARKUP LANGUAGES (HTML, XML, YML)
 		// =======================================================================================
-		{
-			"name": "White base layer",
-			"scope":[
-				"text.html"
-			],
-			"settings": {
-				"foreground": "#fff",
-				"fontStyle": ""
-			}
-		},
 		{
 			"name": "Tag brackets",
 			"scope": [
@@ -300,8 +292,7 @@
 				"punctuation.definition.tag.begin"
 			],
 			"settings": {
-				// "foreground": "#e7f5ff",
-				"foreground": "#FF9FEF",
+				"foreground": "#eb48d0",
 				"fontStyle": ""
 			}
 		},
@@ -318,12 +309,34 @@
 		{
 			"name": "Tag name.",
 			"scope": [
-				"entity.name.tag.localname.xml",
 				"entity.name.tag.localname",
 				"entity.name.tag"
 			],
 			"settings": {
+				// "foreground": "#7BCBFF",
 				"foreground": "#FF9FEF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Custom colour for DOCTYPE HTML tagname",
+			"scope": [
+				"text.html.derivative meta.tag.metadata.doctype.html entity.name.tag.html",
+				"text.html.derivative meta.tag.metadata.doctype.html entity.other.attribute-name.html"
+			],
+			"settings": {
+				"foreground": "#7BCBFF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Custom colour for DOCTYPE HTML tag brackets",
+			"scope": [
+				"text.html.derivative meta.tag.metadata.doctype.html punctuation.definition.tag.begin.html",
+				"text.html.derivative meta.tag.metadata.doctype.html punctuation.definition.tag.end.html"
+			],
+			"settings": {
+				"foreground": "#209bec",
 				"fontStyle": ""
 			}
 		},
@@ -381,27 +394,6 @@
 				"fontStyle": "bold"
 			}
 		},
-
-		// =======================================================================================
-		// C++, C#, C
-		// =======================================================================================
-		// {
-		// 	"name": "meta.function.definition.parameters.cpp",
-		// 	"scope": [
-		// 		"meta.function.definition.parameters.cpp storage.type",
-		// 		"storage.modifier.specifier.const.cpp"
-		// 		// "variable.parameter.cpp"
-		// 		// "variable.parameter.cpp",
-		// 		// "meta.function.definition.parameters.cpp"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#0FF000",
-		// 		"fontStyle": "bold"
-		// 	}
-		// },
-		// {
-		// 	"name": "C++"
-		// },
 
 		// =======================================================================================
 		// JSON 
