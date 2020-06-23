@@ -3,8 +3,6 @@
 	"type": "dark",
 	"colors": {
 
-		"listFilterWidget.background":"#ff0000",
-
 		// Terminal
 		// ===============================================
 		"terminal.ansiBrightRed": "#ffacb3",
@@ -132,6 +130,7 @@
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
+				"meta.function-call.javascript",
 				"support.function.magic.python",
 				"source.python meta.function-call.python meta.function-call.generic.python"
 			],
@@ -198,7 +197,12 @@
 
 				// Java package definition
 				"storage.modifier.package.java",
-				"keyword.other.package.java"
+				"keyword.other.package.java",
+
+				// Javascript/Typescript
+				"keyword.control.import",
+				"meta.import.js keyword.control.as.js",
+				"meta.import.js keyword.control.from.js"
 			],
 			"settings": {
 				"foreground": "#ff929b",
@@ -211,7 +215,8 @@
 				"entity.name.type.struct",
 				"entity.name.type.enum",
 				"entity.name.type.class",
-				"support.function.magic.python"
+				"support.function.magic.python",
+				"entity.other.inherited-class.js"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -221,11 +226,32 @@
 		{
 			"name": "This/Self pointer/keyword",
 			"scope": [
-				"variable.language.this.java",
-				"variable.language.special.self.python"
+				"variable.language.this",
+				"variable.language.special.self"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Template strings",
+			"scope": [
+				"punctuation.definition.template-expression"
+			],
+			"settings": {
+				"foreground": "#ff9fef",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "",
+			"scope": [
+				"meta.template.expression",
+				"meta.template.expression.js"
+			],
+			"settings": {
+				"foreground": "#ffffff",
 				"fontStyle": ""
 			}
 		},
@@ -237,6 +263,40 @@
 		// =======================================================================================
 		// JAVA STUFF
 		// =======================================================================================
+
+		// =======================================================================================
+		// JAVASCRIPT, TYPESCRIPT
+		// =======================================================================================
+		{
+			"name": "Special colour for console object",
+			"scope": [
+				"support.class.console.js"
+			],
+			"settings": {
+				"foreground": "#9fece7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Objects are white",
+			"scope": [
+				"variable.other.object.js"
+			],
+			"settings": {
+				"foreground": "#fff",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Classes & object have special color",
+			"scope": [
+				"entity.name.type.js"
+			],
+			"settings": {
+				"foreground": "#9FECE7",
+				"fontStyle": ""
+			}
+		},
 
 		// =======================================================================================
 		// PYTHON
@@ -263,6 +323,7 @@
 		{
 			"name": "Function decorators & Exceptions",
 			"scope": [
+				"meta.function.decorator.python entity.name.function.decorator.python",
 				"meta.function.decorator.python support.type.python",
 				"meta.function.decorator.python entity.name.function.decorator.python punctuation.definition.decorator.python"
 			],
@@ -337,6 +398,38 @@
 			],
 			"settings": {
 				"foreground": "#209bec",
+				"fontStyle": ""
+			}
+		},
+
+		// =======================================================================================
+		// STYLESHEET LANGUAGES (CSS, SASS, LESS)
+		// =======================================================================================
+
+
+		// 
+		// SQL
+		// 
+		{
+			"name": "SQL keywords",
+			"scope": [
+				"keyword.other.DML.sql",
+				"keyword.other.alias.sql",
+				"keyword.other.sql"
+			],
+			"settings": {
+				"foreground": "#7BCBFF", 
+				// "fontStyle": "" ,
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "SQL ",
+			"scope": [
+				"constant.other.database-name.sql"
+			],
+			"settings": {
+				"foreground": "#FFFFFF",
 				"fontStyle": ""
 			}
 		},
@@ -803,87 +896,6 @@
 		// 	"settings": {
 		// 		"fontStyle": "italic",
 		// 		"foreground": "#FF5370"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 0",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#C792EA"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 1",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#FFCB6B"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 2",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#F78C6C"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 3",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#FF5370"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 4",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#C17E70"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 5",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#82AAFF"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 6",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#f07178"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 7",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#C792EA"
-		// 	}
-		// },
-		// {
-		// 	"name": "JSON Key - Level 8",
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#C3E88D"
 		// 	}
 		// },
 		// {
