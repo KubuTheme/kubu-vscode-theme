@@ -119,7 +119,9 @@
 			"scope": [
 				"constant.numeric.dec",
 				"constant.numeric.decimal",
-				"constant.numeric.float"
+				"constant.numeric.float",
+				"constant.numeric",
+				"keyword.other.unit.hexadecimal.cpp"
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -130,7 +132,7 @@
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
-				"meta.function-call.javascript",
+				"meta.function-call",
 				"support.function.magic.python",
 				"source.python meta.function-call.python meta.function-call.generic.python"
 			],
@@ -163,10 +165,12 @@
 		{
 			"name": "Operators",
 			"scope": [
-				"keyword.operator"
+				"keyword.operator",
+				"keyword.operator.bitwise.shift.cpp"
 			],
 			"settings": {
 				"foreground": "#FF9FEF",
+				
 				"fontStyle": ""
 			}
 		},
@@ -270,7 +274,8 @@
 		{
 			"name": "Special colour for console object",
 			"scope": [
-				"support.class.console.js"
+				"support.class.console.js",
+				"support.class.builtin.js"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -278,9 +283,10 @@
 			}
 		},
 		{
-			"name": "Objects are white",
+			"name": "Variables are white",
 			"scope": [
-				"variable.other.object.js"
+				"variable.other.object.js",
+				"variable.other.object.property.js"
 			],
 			"settings": {
 				"foreground": "#fff",
