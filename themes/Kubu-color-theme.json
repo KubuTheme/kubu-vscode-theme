@@ -5,7 +5,8 @@
 
 		// Title bar
 		// ===============================================
-		"titleBar.activeBackground": "#ff0000",
+		"titleBar.activeBackground": "#1e1e1e",
+		"titleBar.inactiveBackground": "#1e1e1e",
 
 		// Terminal
 		// ===============================================
