@@ -2,3 +2,5 @@
 .vscode-test/**
 ..vscodeignore
 vsc-extension-quickstart.md
+
+package-lock.json
