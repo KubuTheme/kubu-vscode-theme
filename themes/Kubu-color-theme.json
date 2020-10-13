@@ -3,6 +3,10 @@
 	"type": "dark",
 	"colors": {
 
+		// Title bar
+		// ===============================================
+		"titleBar.activeBackground": "#ff0000",
+
 		// Terminal
 		// ===============================================
 		"terminal.ansiBrightRed": "#ffacb3",

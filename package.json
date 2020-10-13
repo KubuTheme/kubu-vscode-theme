@@ -1,27 +1,32 @@
 {
-    "name": "kubu-theme",
-    "displayName": "Kubu",
-    "description": "Kubu theme for VS code",
-    "publisher": "Kubu-vscode-theme-publishing",
-    "version": "1.0.2",
-    "repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
-    "engines": {
-        "vscode": "^1.44.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Kubu",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Kubu-color-theme.json"
-            }
-        ]
-    },
-    "dependencies": {
-        "generator-code": "^1.2.12",
-        "yo": "^3.1.1"
-    }
+	"name": "kubu-theme",
+	"displayName": "Kubu",
+	"description": "Kubu theme for VS code",
+	"publisher": "matthijsreyers",
+	"version": "1.0.2",
+	"repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Kubu",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Kubu-color-theme.json"
+			}
+		]
+	},
+	"dependencies": {
+		"generator-code": "^1.2.12",
+		"yo": "^3.1.1"
+	},
+	"__metadata": {
+		"id": "16110156-5858-4d67-9ae2-e53bafc3841f",
+		"publisherDisplayName": "Matthijs Reyers",
+		"publisherId": "a2657a1b-2224-454b-9c3d-d2a64c1792c9"
+	}
 }
