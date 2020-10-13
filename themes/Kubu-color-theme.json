@@ -132,7 +132,8 @@
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
-				"meta.function-call",
+				"support.function",
+				// "meta.function-call",
 				"support.function.magic.python",
 				"source.python meta.function-call.python meta.function-call.generic.python"
 			],
@@ -206,7 +207,9 @@
 				// Javascript/Typescript
 				"keyword.control.import",
 				"meta.import.js keyword.control.as.js",
-				"meta.import.js keyword.control.from.js"
+				"meta.import.js keyword.control.from.js",
+				"meta.import.ts keyword.control.as.ts",
+				"meta.import.ts keyword.control.from.ts"
 			],
 			"settings": {
 				"foreground": "#ff929b",
@@ -286,7 +289,9 @@
 			"name": "Variables are white",
 			"scope": [
 				"variable.other.object.js",
-				"variable.other.object.property.js"
+				"variable.other.object.property.js",
+				"meta.function-call.js",
+				"meta.function-call.ts"
 			],
 			"settings": {
 				"foreground": "#fff",
