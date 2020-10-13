@@ -2,7 +2,7 @@
     "name": "kubu-theme",
     "displayName": "Kubu",
     "description": "Kubu theme for VS code",
-    "publisher": "matthijsreyers",
+    "publisher": "Kubu-vscode-theme-publishing",
     "version": "1.0.2",
     "repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
     "engines": {
