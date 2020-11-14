@@ -1,5 +1,5 @@
 # Kubu
-[http://vsmarketplacebadge.apphb.com/version/matthijsreyers.kubu-theme.svg](https://github.com/KubuTheme/kubu-vscode-theme)
+[![Marketplace](http://vsmarketplacebadge.apphb.com/version/matthijsreyers.kubu-theme.svg)](https://github.com/KubuTheme/kubu-vscode-theme)
 
 ## About
 The Kubu vscode theme is part of a larger set of themes for 
