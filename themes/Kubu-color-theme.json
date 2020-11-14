@@ -126,7 +126,10 @@
 				"constant.numeric.decimal",
 				"constant.numeric.float",
 				"constant.numeric",
-				"keyword.other.unit.hexadecimal.cpp"
+				"keyword.other.unit.hexadecimal.cpp",
+				"constant.language.true",
+				"constant.language.false",
+				"keyword.other.unit.octal.cpp"
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -136,9 +139,11 @@
 		{
 			"name": "Functions",
 			"scope": [
-				"entity.name.function",
-				"support.function",
-				// "meta.function-call",
+				// "entity.name.function",
+				// "support.function",
+				"entity.name.function.definition",
+				"entity.name.function.call",
+				"entity.name.function.member",
 				"support.function.magic.python",
 				"source.python meta.function-call.python meta.function-call.generic.python"
 			],
@@ -158,25 +163,15 @@
 			}
 		},
 		{
-			"name": "Control flow",
+			"name": "Operators & control flow",
 			"scope": [
 				"keyword.control",
 				"keyword.operator.expression.of.js",
-			],
-			"settings": {
-				"foreground": "#ff9fef",
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Operators",
-			"scope": [
 				"keyword.operator",
 				"keyword.operator.bitwise.shift.cpp"
 			],
 			"settings": {
 				"foreground": "#FF9FEF",
-				
 				"fontStyle": ""
 			}
 		},
@@ -186,7 +181,7 @@
 				"storage.modifier",
 				"meta.function.definition.parameters.cpp storage.type",
 				"storage.modifier.specifier.const.cpp",
-				"support.type",
+				// "support.type",
 				"storage.type"
 			],
 			"settings": {
@@ -228,7 +223,9 @@
 				"entity.name.type.enum",
 				"entity.name.type.class",
 				"support.function.magic.python",
-				"entity.other.inherited-class.js"
+				"entity.other.inherited-class.js",
+				"entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
+				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -271,6 +268,47 @@
 		// =======================================================================================
 		// C++, C#, C
 		// =======================================================================================
+		{
+			"name": "Fix some with coloring for punctuation",
+			"scope": [
+				"punctuation.separator.scope-resolution.constructor.cpp",
+				"punctuation.separator.colon.access.control.cpp",
+				"meta.function.definition.special.constructor.cpp punctuation.section"
+			],
+			"settings": {
+				"foreground": "#fff",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Namespaces and classes",
+			"scope": [
+				"entity.name.scope-resolution.function.definition.cpp",
+				"entity.name.namespace.cpp",
+				"entity.name.function.constructor.cpp",
+				"meta.body.namespace.cpp meta.function.definition.cpp meta.body.function.definition.cpp entity.name.scope-resolution.cpp",
+				"meta.block.class.cpp meta.qualified_type.cpp entity.name.scope-resolution.cpp",
+				"entity.name.type.constructor"
+			],
+			"settings": {
+				"foreground": "#9fece7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Access control keywords in c++",
+			"scope": [
+				"storage.type.modifier.access.control.private.cpp",
+				"storage.type.modifier.access.control.public.cpp",
+				"storage.type.modifier.access.control.protected.cpp",
+				"punctuation.separator.pointer-access.cpp",
+				"keyword.operator.pointer-access"
+			],
+			"settings": {
+				"foreground": "#FF9FEF",
+				"fontStyle": ""
+			}
+		},
 
 		// =======================================================================================
 		// JAVA STUFF

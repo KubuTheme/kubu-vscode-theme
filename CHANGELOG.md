@@ -5,7 +5,7 @@ All notable changes to the "kubu-theme" extension will be documented in this fil
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
-- Haskell styling support
+- Add proper Haskell styling support.
 
 ## [1.0.1] - 2020-10-13
 - Initial release.
@@ -15,3 +15,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.0.3] - 2020-10-13
 - Added titlebar styling for windows users.
+
+## [1.0.4] - 2020-11-14
+- Fixed bugs in c++ coloring and boolean constant colors.
