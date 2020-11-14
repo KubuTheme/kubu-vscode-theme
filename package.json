@@ -3,7 +3,7 @@
 	"displayName": "Kubu",
 	"description": "Kubu theme for VS code",
 	"publisher": "matthijsreyers",
-	"version": "1.0.4",
+	"version": "1.0.6",
 	"repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
 	"engines": {
 		"vscode": "^1.44.0"
@@ -20,10 +20,7 @@
 			}
 		]
 	},
-	"dependencies": {
-		"generator-code": "^1.2.12",
-		"yo": "^3.1.1"
-	},
+	"dependencies": {},
 	"__metadata": {
 		"id": "16110156-5858-4d67-9ae2-e53bafc3841f",
 		"publisherDisplayName": "Matthijs Reyers",

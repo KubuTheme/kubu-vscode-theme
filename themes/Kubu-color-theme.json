@@ -1,6 +1,11 @@
 {
 	"name": "Kubu",
 	"type": "dark",
+
+	"semanticTokenColors": {
+		"memberOperatorOverload": "#7bcbff"
+	},
+	
 	"colors": {
 
 		// Title bar
@@ -141,6 +146,7 @@
 			"scope": [
 				// "entity.name.function",
 				// "support.function",
+				"entity.name.function.js",
 				"entity.name.function.definition",
 				"entity.name.function.call",
 				"entity.name.function.member",
@@ -181,7 +187,6 @@
 				"storage.modifier",
 				"meta.function.definition.parameters.cpp storage.type",
 				"storage.modifier.specifier.const.cpp",
-				// "support.type",
 				"storage.type"
 			],
 			"settings": {
@@ -288,7 +293,8 @@
 				"entity.name.function.constructor.cpp",
 				"meta.body.namespace.cpp meta.function.definition.cpp meta.body.function.definition.cpp entity.name.scope-resolution.cpp",
 				"meta.block.class.cpp meta.qualified_type.cpp entity.name.scope-resolution.cpp",
-				"entity.name.type.constructor"
+				"entity.name.type.constructor",
+				"entity.name.function.constructor.cpp"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -300,12 +306,21 @@
 			"scope": [
 				"storage.type.modifier.access.control.private.cpp",
 				"storage.type.modifier.access.control.public.cpp",
-				"storage.type.modifier.access.control.protected.cpp",
+				"storage.type.modifier.access.control.protected.cpp"
+			],
+			"settings": {
+				"foreground": "#FF9FEF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Pointer access operator",
+			"scope": [
 				"punctuation.separator.pointer-access.cpp",
 				"keyword.operator.pointer-access"
 			],
 			"settings": {
-				"foreground": "#FF9FEF",
+				"foreground": "#7bcbff",
 				"fontStyle": ""
 			}
 		},

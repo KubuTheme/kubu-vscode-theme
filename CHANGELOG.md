@@ -18,3 +18,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.0.4] - 2020-11-14
 - Fixed bugs in c++ coloring and boolean constant colors.
+
+## [1.0.5] - 2020-11-14
+- Fixed version naming.
+
+## [1.0.6] - 2020-11-14
+- Fixed overloaded operator pointer access arrow color bug.
+
