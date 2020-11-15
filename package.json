@@ -3,10 +3,10 @@
 	"displayName": "Kubu",
 	"description": "Kubu theme for VS code",
 	"publisher": "matthijsreyers",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
 	"engines": {
-		"vscode": "^1.44.0"
+		"vscode": "^1.1.0"
 	},
 	"categories": [
 		"Themes"
