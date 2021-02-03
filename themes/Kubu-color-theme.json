@@ -3,7 +3,10 @@
 	"type": "dark",
 
 	"semanticTokenColors": {
-		"memberOperatorOverload": "#7bcbff"
+		// "memberOperatorOverload": "#7bcbff",
+		"entity.name.function":"#ff0000",
+		"entity.name.function.operator":"#ff0000",
+		"member":"#ff0000"
 	},
 	
 	"colors": {
@@ -102,7 +105,7 @@
 			}
 		},
 		{
-			"name": "String inner contents",
+			"name": "String content",
 			"scope": [
 				"string",
 				"markup.inline.raw.string.markdown"
@@ -117,7 +120,10 @@
 			"scope": [
 				"punctuation.definition.string.begin",
 				"punctuation.definition.string.end",
-				"punctuation.definition.raw.markdown"
+				"punctuation.definition.raw.markdown",
+
+				// Python format string 'f'
+				"meta.fstring.python string.interpolated.python string.quoted.single.python storage.type.string.python"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -125,7 +131,7 @@
 			}
 		},
 		{
-			"name": "Integers and floating point numbers",
+			"name": "Integers, Floating pts, Booleans",
 			"scope": [
 				"constant.numeric.dec",
 				"constant.numeric.decimal",
@@ -134,7 +140,10 @@
 				"keyword.other.unit.hexadecimal.cpp",
 				"constant.language.true",
 				"constant.language.false",
-				"keyword.other.unit.octal.cpp"
+				"keyword.other.unit.octal.cpp",
+
+				// Python booleans.
+				"constant.language.python"
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -144,7 +153,7 @@
 		{
 			"name": "Functions",
 			"scope": [
-				// "entity.name.function",
+				"entity.name.function",
 				// "support.function",
 				"entity.name.function.js",
 				"entity.name.function.definition",
@@ -187,7 +196,12 @@
 				"storage.modifier",
 				"meta.function.definition.parameters.cpp storage.type",
 				"storage.modifier.specifier.const.cpp",
-				"storage.type"
+				"storage.type",
+				"support.type.python",
+				"support.type.primitive.ts",
+
+				// Escape sequences.
+				"constant.character.escape"
 			],
 			"settings": {
 				"foreground": "#7bcbff",
@@ -222,13 +236,24 @@
 			}
 		},
 		{
-			"name": "Naming for: classes, structs, and enums",
+			"name": "Naming for: classes, interfaces, structs, and enums",
 			"scope": [
+				"entity.name.type.class",
+				"entity.name.type.interface",
 				"entity.name.type.struct",
 				"entity.name.type.enum",
-				"entity.name.type.class",
-				"support.function.magic.python",
+
+				// Super constructors.
+				"variable.language.super",
+
+				// Typescript & Javascript nonsense.
+				"meta.var.expr.ts meta.var-single-variable.expr.ts meta.type.annotation.ts entity.name.type.ts",
 				"entity.other.inherited-class.js",
+
+				// Python specific stuff.
+				"support.function.magic.python",
+
+				// C++ nonsense (seriously what???).
 				"entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
 				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp"
 			],
@@ -249,9 +274,13 @@
 			}
 		},
 		{
-			"name": "Template strings",
+			"name": "Template strings expression brackets",
 			"scope": [
-				"punctuation.definition.template-expression"
+				"punctuation.definition.template-expression",
+
+				// Pyhton format strings.
+				"meta.fstring.python constant.character.format.placeholder.other.python",
+				"meta.fstring.python constant.character.format.placeholder.other.python"
 			],
 			"settings": {
 				"foreground": "#ff9fef",
@@ -259,7 +288,7 @@
 			}
 		},
 		{
-			"name": "",
+			"name": "Template string expression",
 			"scope": [
 				"meta.template.expression",
 				"meta.template.expression.js"
@@ -326,6 +355,10 @@
 		},
 
 		// =======================================================================================
+		// HASKELL SUPPORT
+		// =======================================================================================
+
+		// =======================================================================================
 		// JAVA STUFF
 		// =======================================================================================
 
@@ -359,7 +392,19 @@
 		{
 			"name": "Classes & object have special color",
 			"scope": [
-				"entity.name.type.js"
+				"entity.name.type.js",
+				"meta.class.ts support.class.builtin.ts"
+			],
+			"settings": {
+				"foreground": "#9FECE7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Type colour for typeof operator",
+			"scope": [
+				"keyword.operator.expression.typeof.ts",
+				"keyword.operator.expression.typeof.js"
 			],
 			"settings": {
 				"foreground": "#9FECE7",
@@ -474,11 +519,75 @@
 		// =======================================================================================
 		// STYLESHEET LANGUAGES (CSS, SASS, LESS)
 		// =======================================================================================
+		{
+			"name": "CSS variables",
+			"scope": [
+				"variable.css",
+				"meta.function.variable.css variable.argument.css"
+			],
+			"settings": {
+				"foreground": "#FFDB99", 
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS functions",
+			"scope": [
+				"support.function.misc.css",
+			],
+			"settings": {
+				"foreground": "#C3E88D",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS operator colour fix",
+			"scope": [
+				"source.css keyword.operator",
+				"punctuation.definition.entity.css"
+			],
+			"settings": {
+				"foreground": "#FFF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS classes",
+			"scope": [
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.class.css punctuation.definition.entity.css"
+			],
+			"settings": {
+				// "foreground": "#cfa6ff",
+				"foreground": "#ffb982",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS id's",
+			"scope": [
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.id.css punctuation.definition.entity.css"
+			],
+			"settings": {
+				"foreground": "#FF929B",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS pseudo classes",
+			"scope": [
+				"entity.other.attribute-name.pseudo-class.css"
+			],
+			"settings": {
+				"foreground": "#C3E88D",
+				"fontStyle": ""
+			}
+		},
 
-
-		// 
+		// =======================================================================================
 		// SQL
-		// 
+		// =======================================================================================
 		{
 			"name": "SQL keywords",
 			"scope": [
@@ -493,7 +602,7 @@
 			}
 		},
 		{
-			"name": "SQL ",
+			"name": "SQL datbase name",
 			"scope": [
 				"constant.other.database-name.sql"
 			],
