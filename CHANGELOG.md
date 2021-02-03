@@ -24,8 +24,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fixed overloaded operator pointer access arrow color bug.
 
 ## [1.0.8] - 2021-01-08
-- Fixed overloaded operator pointer access arrow color bug.
 - Added proper Haskell syntax highlighting support.
+- Fixed overloaded operator pointer access arrow color bug.
 
 ## [1.0.9] - 2022-02-3
 - Overhauled CSS syntax highlighting.
