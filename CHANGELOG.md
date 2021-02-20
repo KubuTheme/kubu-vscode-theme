@@ -27,9 +27,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added proper Haskell syntax highlighting support.
 - Fixed overloaded operator pointer access arrow color bug.
 
-## [1.0.9] - 2022-02-3
+## [1.0.9] - 2021-02-03
 - Overhauled CSS syntax highlighting.
 - Added syntax highlighting for interfaces.
 - Added syntax highlighting for escape sequences in strings.
 - Fixed Python booleans (& language constants) not appearing as normal boolean color.
 - Fixed Python format string 'f' appearing blue.
+
+## [1.0.10] - 2021-02-20
+- Added syntax highlighting for js/ts 'undefined' & 'null' constants;
+- Added syntax highlighting for js/ts decorators.
+- Added syntax highlighting for Angular Language Service.
