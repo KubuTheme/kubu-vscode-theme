@@ -1,7 +1,7 @@
 
-![Kubu theme logo](https://github.com/KubuTheme/kubu-art/blob/main/kubu-full-logo.png)
-
-<hr>
+<h1>
+    <img alt="Kubu theme logo" src="https://github.com/KubuTheme/kubu-art/blob/main/kubu-full-logo.png">
+</h1>
 
 [![Marketplace](https://vsmarketplacebadge.apphb.com/version/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
