@@ -181,7 +181,10 @@
 		{
 			"name": "Function parameters",
 			"scope": [
-				"variable.parameter.function"
+				"variable.parameter.function",
+
+				// Function signature as type in Typescript fix.
+				"meta.type.annotation.ts meta.type.function.ts meta.parameters.ts variable.parameter.ts"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -194,7 +197,14 @@
 				"keyword.control",
 				"keyword.operator.expression.of.js",
 				"keyword.operator",
-				"keyword.operator.bitwise.shift.cpp"
+				"keyword.operator.bitwise.shift.cpp",
+
+				// Operators in type signatures 
+				"meta.type.annotation.ts meta.brace.round.ts",
+
+				// CSS !important keyword.
+				"keyword.other.important.scss",
+				"keyword.other.important.css"
 			],
 			"settings": {
 				"foreground": "#FF9FEF",
@@ -456,6 +466,20 @@
 			],
 			"settings": {
 				"foreground": "#C3E88D",
+			}
+		},
+		{
+			"name": "Typeparameters",
+			"scope": [
+				"punctuation.definition.typeparameters.begin.ts",
+				"punctuation.definition.typeparameters.end.ts",
+				"meta.type.parameters.ts punctuation.separator.comma.ts",
+				"meta.type.annotation.ts punctuation.definition.parameters.begin.ts",
+				"meta.type.annotation.ts punctuation.definition.parameters.end.ts",
+			],
+			"settings": {
+				"foreground": "#fff",
+				"fontStyle": ""
 			}
 		},
 

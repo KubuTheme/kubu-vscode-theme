@@ -38,3 +38,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added syntax highlighting for js/ts 'undefined' & 'null' constants;
 - Added syntax highlighting for js/ts decorators.
 - Added syntax highlighting for Angular Language Service.
+
+## [1.1.0] - 2021-03-09
+- Added VS code icon 
