@@ -1,4 +1,8 @@
-# Kubu theme
+
+![Kubu theme logo](https://github.com/KubuTheme/kubu-art/blob/main/kubu-full-logo.png)
+
+<hr>
+
 [![Marketplace](https://vsmarketplacebadge.apphb.com/version/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
 [![Ratings](https://vsmarketplacebadge.apphb.com/rating-star/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
