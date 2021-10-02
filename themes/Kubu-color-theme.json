@@ -4,9 +4,9 @@
 
 	"semanticTokenColors": {
 		// "memberOperatorOverload": "#7bcbff",
-		"entity.name.function":"#ff0000",
-		"entity.name.function.operator":"#ff0000",
-		"member":"#ff0000"
+		// "entity.name.function":"#ff0000",
+		// "entity.name.function.operator":"#ff0000",
+		// "member":"#ff0000"
 	},
 	
 	"colors": {
@@ -159,8 +159,10 @@
 				"entity.name.function.definition",
 				"entity.name.function.call",
 				"entity.name.function.member",
+
+				// Python
 				"support.function.magic.python",
-				"source.python meta.function-call.python meta.function-call.generic.python"
+				"source.python meta.function-call.python meta.function-call.generic.python",
 			],
 			"settings": {
 				"foreground": "#C3E88D",
@@ -170,7 +172,7 @@
 		{
 			"name": "Function parameters",
 			"scope": [
-				"variable.parameter.function"
+				"variable.parameter.function",
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -183,7 +185,8 @@
 				"keyword.control",
 				"keyword.operator.expression.of.js",
 				"keyword.operator",
-				"keyword.operator.bitwise.shift.cpp"
+				"keyword.operator.bitwise.shift.cpp",
+
 			],
 			"settings": {
 				"foreground": "#FF9FEF",
@@ -201,7 +204,11 @@
 				"support.type.primitive.ts",
 
 				// Escape sequences.
-				"constant.character.escape"
+				"constant.character.escape",
+
+				// Rust keywords.
+				"keyword.other.fn.rust",
+				"keyword.other.rust"
 			],
 			"settings": {
 				"foreground": "#7bcbff",
@@ -252,6 +259,10 @@
 
 				// Python specific stuff.
 				"support.function.magic.python",
+
+				// Rust specific stuff.
+				"entity.name.type.rust",
+				"storage.class.std.rust",
 
 				// C++ nonsense (seriously what???).
 				"entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
@@ -359,8 +370,40 @@
 		// =======================================================================================
 
 		// =======================================================================================
-		// JAVA STUFF
+		// RUST SYNTAX SUPPORT
 		// =======================================================================================
+		{
+			"name": "Rust storage modifier keyword",
+			"scope": [
+				// Rust function keyword.
+				"storage.modifier.mut.rust",
+			],
+			"settings": {
+				"foreground": "#DEB2FF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Rust attributes",
+			"scope": [
+				"meta.attribute.rust"
+			],
+			"settings": {
+				"foreground": "#ff929b",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Rust attribute definition",
+			"scope": [
+				"punctuation.definition.attribute.rust"
+			],
+			"settings": {
+				"foreground": "#ff929b",
+				"fontStyle": "bold"
+			}
+		},
+
 
 		// =======================================================================================
 		// JAVASCRIPT, TYPESCRIPT
@@ -578,6 +621,16 @@
 			"name": "CSS pseudo classes",
 			"scope": [
 				"entity.other.attribute-name.pseudo-class.css"
+			],
+			"settings": {
+				"foreground": "#C3E88D",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS property values",
+			"scope": [
+				"support.constant.property-value.css"
 			],
 			"settings": {
 				"foreground": "#C3E88D",
