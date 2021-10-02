@@ -39,9 +39,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added syntax highlighting for js/ts decorators.
 - Added syntax highlighting for Angular Language Service.
 
-## [1.0.11] - 2021-03-09
+## [1.1.0] - 2021-03-09
 - Added VS code icon 
 
-## [1.1.0] - 2021-10-02
+## [1.2.0] - 2021-10-02
+- Overhauled readme page with full Kubu logo.
 - Added basic Rust syntax highlighting.
-- Added support for better Rust syntax highlighting extension: `dustypomerleau.rust-syntax`
+- Added support for Rust syntax highlighting extension: `dustypomerleau.rust-syntax`
