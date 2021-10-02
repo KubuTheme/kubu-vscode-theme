@@ -6,7 +6,8 @@
 		// "memberOperatorOverload": "#7bcbff",
 		// "entity.name.function":"#ff0000",
 		// "entity.name.function.operator":"#ff0000",
-		// "member":"#ff0000"
+		// "member":"#ff0000",
+		"namespace":"#9fece7"
 	},
 	
 	"colors": {
@@ -131,19 +132,29 @@
 			}
 		},
 		{
-			"name": "Integers, Floating pts, Booleans",
+			"name": "Primitves & numeric constants: Ints, Floats, Bools",
 			"scope": [
 				"constant.numeric.dec",
 				"constant.numeric.decimal",
 				"constant.numeric.float",
 				"constant.numeric",
-				"keyword.other.unit.hexadecimal.cpp",
 				"constant.language.true",
 				"constant.language.false",
+				"constant.language.boolean",
+				"keyword.other.unit.hexadecimal.cpp",
 				"keyword.other.unit.octal.cpp",
 
 				// Python booleans.
-				"constant.language.python"
+				"constant.language.python",
+
+				// Undefined and null types.
+				"constant.language.undefined",
+				"constant.language.null",
+
+				// Typescript return types.
+				"meta.return.type.ts support.type.primitive.ts",
+				"support.type.primitive.ts",
+				"support.type.builtin.ts"
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -173,6 +184,9 @@
 			"name": "Function parameters",
 			"scope": [
 				"variable.parameter.function",
+
+				// Function signature as type in Typescript fix.
+				"meta.type.annotation.ts meta.type.function.ts meta.parameters.ts variable.parameter.ts"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -187,6 +201,12 @@
 				"keyword.operator",
 				"keyword.operator.bitwise.shift.cpp",
 
+				// Operators in type signatures 
+				"meta.type.annotation.ts meta.brace.round.ts",
+
+				// CSS !important keyword.
+				"keyword.other.important.scss",
+				"keyword.other.important.css"
 			],
 			"settings": {
 				"foreground": "#FF9FEF",
@@ -255,6 +275,10 @@
 
 				// Typescript & Javascript nonsense.
 				"meta.var.expr.ts meta.var-single-variable.expr.ts meta.type.annotation.ts entity.name.type.ts",
+				"meta.class.ts meta.method.declaration.ts storage.type.ts",
+				"meta.type.parameters.ts entity.name.type.ts",
+				"meta.type.annotation.ts",
+				"entity.other.inherited-class.ts",
 				"entity.other.inherited-class.js",
 
 				// Python specific stuff.
@@ -451,6 +475,52 @@
 			],
 			"settings": {
 				"foreground": "#9FECE7",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Typescript (& Javascript?) decorators",
+			"scope": [
+				"meta.decorator.ts punctuation.decorator.ts",
+				"meta.decorator.ts meta.function-call.ts entity.name.function.ts",
+				"meta.decorator.ts meta.brace.round.ts"
+			],
+			"settings": {
+				"foreground": "#FF929B",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Decorator argument colours fixes",
+			"scope": [
+				"meta.decorator.ts meta.objectliteral.ts meta.brace.round.ts",
+				"meta.type.annotation.ts meta.object.type.ts",
+				"meta.type.annotation.ts meta.type.tuple.ts meta.brace.square.ts"
+			],
+			"settings": {
+				"foreground": "#ffffff",
+			}
+		},
+		{
+			"name": "Decorator argument colours fixes",
+			"scope": [
+				"meta.decorator.ts meta.objectliteral.ts meta.function-call.ts entity.name.function.ts"
+			],
+			"settings": {
+				"foreground": "#C3E88D",
+			}
+		},
+		{
+			"name": "Typeparameters",
+			"scope": [
+				"punctuation.definition.typeparameters.begin.ts",
+				"punctuation.definition.typeparameters.end.ts",
+				"meta.type.parameters.ts punctuation.separator.comma.ts",
+				"meta.type.annotation.ts punctuation.definition.parameters.begin.ts",
+				"meta.type.annotation.ts punctuation.definition.parameters.end.ts",
+			],
+			"settings": {
+				"foreground": "#fff",
 				"fontStyle": ""
 			}
 		},
