@@ -390,6 +390,42 @@
 		},
 
 		// =======================================================================================
+		// PROLOG SUPPORT 
+		// =======================================================================================
+		{
+			"name": "Prolog variable",
+			"scope": [
+				"variable.parameter.uppercase.prolog"
+			],
+			"settings": {
+				"foreground": "#FF9FEF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Prolog cut",
+			"scope": [
+				"keyword.control.cut.prolog"
+			],
+			"settings": {
+				"foreground": "#ffcb6b",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Fact end keyword color fix",
+			"scope": [
+				"keyword.control.fact.end.prolog",
+				"keyword.control.clause.bodyend.prolog"
+			],
+			"settings": {
+				"foreground": "#ffffff",
+				"fontStyle": ""
+			}
+		},
+		
+
+		// =======================================================================================
 		// HASKELL SUPPORT
 		// =======================================================================================
 
