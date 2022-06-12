@@ -4,7 +4,7 @@
 	"displayName": "Kubu theme",
 	"description": "Kubu theme for VS code",
 	"publisher": "matthijsreyers",
-	"version": "1.1.0",
+	"version": "1.2.1",
 	"repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
 	"engines": {
 		"vscode": "^1.1.0"

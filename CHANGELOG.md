@@ -49,3 +49,5 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.2.1] - 2022-05-29
 - Added support for Prolog syntax highlighting extension: `arthurwang.vsc-prolog`.
+- Added syntax highlighting for `editorBracketHighlight` levels.
+- Fixed several issues with initial syntax highlighting for Haskell with `justusadam.language-haskell`.
