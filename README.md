@@ -3,9 +3,9 @@
 
 <hr>
 
-[![Marketplace](https://vsmarketplacebadge.apphb.com/version/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-star/matthijsreyers.kubu-theme.svg)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
+[![License](https://img.shields.io/github/license/KubuTheme/kubu-vscode-theme?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/matthijsreyers.kubu-theme?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
+[![Ratings](https://img.shields.io/visual-studio-marketplace/stars/matthijsreyers.kubu-theme?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=matthijsreyers.kubu-theme)
 
 The Kubu vscode theme is part of a larger set of themes for the KDE display manager.
 
