@@ -147,7 +147,10 @@
 				// Typescript return types.
 				"meta.return.type.ts support.type.primitive.ts",
 				"support.type.primitive.ts",
-				"support.type.builtin.ts"
+				"support.type.builtin.ts",
+				// Microsoft C#
+				"keyword.type.cs"
+
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -245,6 +248,10 @@
 				"keyword.other.module.haskell",
 				"keyword.other.qualified.haskell",
 				"keyword.other.as.haskell",
+				// import keywords QML 
+				"keyword.other.import.qml",
+				// Stupid C#
+				"keyword.other.using.cs"
 			],
 			"settings": {
 				"foreground": "#ff929b",
@@ -274,7 +281,10 @@
 				"storage.class.std.rust",
 				// C++ nonsense (seriously what???).
 				"entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
-				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp"
+				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
+				// QML
+				"support.class.qml",
+				"variable.other.readwrite.js"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -285,7 +295,9 @@
 			"name": "This/Self pointer/keyword",
 			"scope": [
 				"variable.language.this",
-				"variable.language.special.self"
+				"variable.language.special.self",
+				// C# Fix
+				"keyword.other.this.cs"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -335,13 +347,17 @@
 		{
 			"name": "Namespaces and classes",
 			"scope": [
+				// C++
 				"entity.name.scope-resolution.function.definition.cpp",
 				"entity.name.namespace.cpp",
 				"entity.name.function.constructor.cpp",
 				"meta.body.namespace.cpp meta.function.definition.cpp meta.body.function.definition.cpp entity.name.scope-resolution.cpp",
 				"meta.block.class.cpp meta.qualified_type.cpp entity.name.scope-resolution.cpp",
 				"entity.name.type.constructor",
-				"entity.name.function.constructor.cpp"
+				"entity.name.function.constructor.cpp",
+				// C#
+				"entity.name.type.namespace.cs",
+				"entity.name.type.cs"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -368,6 +384,26 @@
 			],
 			"settings": {
 				"foreground": "#7bcbff",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "C# Class and namespace fixes",
+			"scope": [
+				"keyword.other.namespace.cs",
+				"keyword.other.class.cs"
+			],
+			"settings": {
+				"foreground": "#7BCBFF", "fontStyle": ""
+			}
+		},
+		{
+			"name": "C# Objects",
+			"scope": [
+				"variable.other.object.cs"
+			],
+			"settings": {
+				"foreground": "#FFCB6B",
 				"fontStyle": ""
 			}
 		},
