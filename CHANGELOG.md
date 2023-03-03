@@ -51,3 +51,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added support for Prolog syntax highlighting extension: `arthurwang.vsc-prolog`.
 - Added syntax highlighting for `editorBracketHighlight` levels.
 - Fixed several issues with initial syntax highlighting for Haskell with `justusadam.language-haskell`.
+
+## [1.2.2] - 2023-02-03
+- Fixed broken badges on README.
+- Added syntax highlighting support for C# via `ms-dotnettools.csharp`.
