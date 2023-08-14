@@ -45,4 +45,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.2.0] - 2021-10-02
 - Overhauled readme page with full Kubu logo.
 - Added basic Rust syntax highlighting.
-- Added support for Rust syntax highlighting extension: `dustypomerleau.rust-syntax`
+- Added support for Rust syntax highlighting extension: `dustypomerleau.rust-syntax`.
+
+## [1.2.1] - 2022-05-29
+- Added support for Prolog syntax highlighting extension: `arthurwang.vsc-prolog`.
+- Added syntax highlighting for `editorBracketHighlight` levels.
+- Fixed several issues with initial syntax highlighting for Haskell with `justusadam.language-haskell`.
