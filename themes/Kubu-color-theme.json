@@ -1,15 +1,13 @@
 {
 	"name": "Kubu",
 	"type": "dark",
-
 	"semanticTokenColors": {
 		// "memberOperatorOverload": "#7bcbff",
 		// "entity.name.function":"#ff0000",
 		// "entity.name.function.operator":"#ff0000",
 		// "member":"#ff0000",
-		"namespace":"#9fece7"
+		"namespace": "#9fece7"
 	},
-	
 	"colors": {
 		"editorBracketHighlight.foreground1": "#FFFFFF",
 		"editorBracketHighlight.foreground2": "#ffdb99",
@@ -28,17 +26,17 @@
 		// ===============================================
 		"terminal.ansiBrightRed": "#ffacb3",
 		"terminal.ansiRed": "#ff929b",
-		"terminal.ansiBrightGreen":"#dbffa5",
+		"terminal.ansiBrightGreen": "#dbffa5",
 		"terminal.ansiGreen": "#c3e88d",
-		"terminal.ansiBrightYellow":"#ffdb99",
+		"terminal.ansiBrightYellow": "#ffdb99",
 		"terminal.ansiYellow": "#ffcb6b",
-		"terminal.ansiBrightBlue":"#9cd8ff",
+		"terminal.ansiBrightBlue": "#9cd8ff",
 		"terminal.ansiBlue": "#7bcbff",
-		"terminal.ansiBrightMagenta":"#e9cbff",
+		"terminal.ansiBrightMagenta": "#e9cbff",
 		"terminal.ansiMagenta": "#deb2ff",
-		"terminal.ansiBrightCyan":"#c5fffb",
+		"terminal.ansiBrightCyan": "#c5fffb",
 		"terminal.ansiCyan": "#9fece7",
-		"terminal.ansiBrightWhite":"#ffffff",
+		"terminal.ansiBrightWhite": "#ffffff",
 		"terminal.ansiWhite": "#f0f0f0",
 
 		// Editor / active tab.
@@ -51,8 +49,8 @@
 		// ===============================================
 		"editorGroupHeader.tabsBackground": "#1e1e1e",
 		"editorGroup.dropBackground": "#3535358F",
-		"editorGroup.border":"#1e1e1e",
-		"tab.inactiveBackground":"#232323",
+		"editorGroup.border": "#1e1e1e",
+		"tab.inactiveBackground": "#232323",
 
 		// Editor minimap
 		// ===============================================
@@ -68,35 +66,25 @@
 
 		// List 
 		//===============================================
-		
 		"list.activeSelectionBackground": "#2b2b2b",
 		// "list.dropBackground": "#2b2b2b",
 		"list.dropBackground": "#434343",
+		"list.inactiveSelectionBackground": "#2b2b2b70",
+		"list.hoverBackground": "#2b2b2b70",
+		"list.focusBackground": "#2b2b2b70",
 
-		"list.inactiveSelectionBackground":"#2b2b2b70",
-		"list.hoverBackground":"#2b2b2b70",
-		"list.focusBackground":"#2b2b2b70",
-
-		
 		// Stuff.
 		// ===============================================
-        "activityBar.foreground": "#ffffff",
-		"activityBar.background":"#111111",
-		
+		"activityBar.foreground": "#ffffff",
+		"activityBar.background": "#111111",
 		"activityBarBadge.background": "#353535",
 		"activityBarBadge.foreground": "#fff",
-
 		"sideBarTitle.foreground": "#bbbbbb",
-
 		"scrollbar.shadow": "#fff",
-        "icon.foreground": "#ffffff",
-
-
-        "sideBar.background":"#1e1e1e",
-        "sideBarSectionHeader.background": "#232323",
-
+		"icon.foreground": "#ffffff",
+		"sideBar.background": "#1e1e1e",
+		"sideBarSectionHeader.background": "#232323",
 	},
-
 	"tokenColors": [
 		// =======================================================================================
 		//  GENERAL SYNTAX HIGHLIGHTING COLORS
@@ -129,7 +117,6 @@
 				"punctuation.definition.string.begin",
 				"punctuation.definition.string.end",
 				"punctuation.definition.raw.markdown",
-
 				// Python format string 'f'
 				"meta.fstring.python string.interpolated.python string.quoted.single.python storage.type.string.python"
 			],
@@ -150,21 +137,20 @@
 				"constant.language.boolean",
 				"keyword.other.unit.hexadecimal.cpp",
 				"keyword.other.unit.octal.cpp",
-
 				// Haskell
 				// "constant.other.haskell",
-
 				// Python booleans.
 				"constant.language.python",
-
 				// Undefined and null types.
 				"constant.language.undefined",
 				"constant.language.null",
-
 				// Typescript return types.
 				"meta.return.type.ts support.type.primitive.ts",
 				"support.type.primitive.ts",
-				"support.type.builtin.ts"
+				"support.type.builtin.ts",
+				// Microsoft C#
+				"keyword.type.cs"
+
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -180,7 +166,6 @@
 				"entity.name.function.definition",
 				"entity.name.function.call",
 				"entity.name.function.member",
-
 				// Python
 				"support.function.magic.python",
 				"source.python meta.function-call.python meta.function-call.generic.python",
@@ -194,7 +179,6 @@
 			"name": "Function parameters",
 			"scope": [
 				"variable.parameter.function",
-
 				// Function signature as type in Typescript fix.
 				"meta.type.annotation.ts meta.type.function.ts meta.parameters.ts variable.parameter.ts"
 			],
@@ -210,10 +194,8 @@
 				"keyword.operator.expression.of.js",
 				"keyword.operator",
 				"keyword.operator.bitwise.shift.cpp",
-
 				// Operators in type signatures 
 				"meta.type.annotation.ts meta.brace.round.ts",
-
 				// CSS !important keyword.
 				"keyword.other.important.scss",
 				"keyword.other.important.css"
@@ -232,10 +214,8 @@
 				"storage.type",
 				"support.type.python",
 				"support.type.primitive.ts",
-
 				// Escape sequences.
 				"constant.character.escape",
-
 				// Rust keywords.
 				"keyword.other.fn.rust",
 				"keyword.other.rust"
@@ -252,26 +232,26 @@
 				"meta.preprocessor",
 				"keyword.control.directive.define.cpp",
 				"keyword.control.directive.include",
-
 				// import for python
 				"keyword.control.import.python",
-
 				// Java package definition
 				"storage.modifier.package.java",
 				"keyword.other.package.java",
-
 				// Javascript/Typescript
 				"keyword.control.import",
 				"meta.import.js keyword.control.as.js",
 				"meta.import.js keyword.control.from.js",
 				"meta.import.ts keyword.control.as.ts",
 				"meta.import.ts keyword.control.from.ts",
-
 				// Haskell import/module declaration
 				"keyword.other.import.haskell",
 				"keyword.other.module.haskell",
 				"keyword.other.qualified.haskell",
 				"keyword.other.as.haskell",
+				// import keywords QML 
+				"keyword.other.import.qml",
+				// Stupid C#
+				"keyword.other.using.cs"
 			],
 			"settings": {
 				"foreground": "#ff929b",
@@ -285,10 +265,8 @@
 				"entity.name.type.interface",
 				"entity.name.type.struct",
 				"entity.name.type.enum",
-
 				// Super constructors.
 				"variable.language.super",
-
 				// Typescript & Javascript nonsense.
 				"meta.var.expr.ts meta.var-single-variable.expr.ts meta.type.annotation.ts entity.name.type.ts",
 				"meta.class.ts meta.method.declaration.ts storage.type.ts",
@@ -296,17 +274,17 @@
 				"meta.type.annotation.ts",
 				"entity.other.inherited-class.ts",
 				"entity.other.inherited-class.js",
-
 				// Python specific stuff.
 				"support.function.magic.python",
-
 				// Rust specific stuff.
 				"entity.name.type.rust",
 				"storage.class.std.rust",
-
 				// C++ nonsense (seriously what???).
 				"entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
-				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp"
+				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
+				// QML
+				"support.class.qml",
+				"variable.other.readwrite.js"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -317,7 +295,9 @@
 			"name": "This/Self pointer/keyword",
 			"scope": [
 				"variable.language.this",
-				"variable.language.special.self"
+				"variable.language.special.self",
+				// C# Fix
+				"keyword.other.this.cs"
 			],
 			"settings": {
 				"foreground": "#ffcb6b",
@@ -328,7 +308,6 @@
 			"name": "Template strings expression brackets",
 			"scope": [
 				"punctuation.definition.template-expression",
-
 				// Pyhton format strings.
 				"meta.fstring.python constant.character.format.placeholder.other.python",
 				"meta.fstring.python constant.character.format.placeholder.other.python"
@@ -368,13 +347,17 @@
 		{
 			"name": "Namespaces and classes",
 			"scope": [
+				// C++
 				"entity.name.scope-resolution.function.definition.cpp",
 				"entity.name.namespace.cpp",
 				"entity.name.function.constructor.cpp",
 				"meta.body.namespace.cpp meta.function.definition.cpp meta.body.function.definition.cpp entity.name.scope-resolution.cpp",
 				"meta.block.class.cpp meta.qualified_type.cpp entity.name.scope-resolution.cpp",
 				"entity.name.type.constructor",
-				"entity.name.function.constructor.cpp"
+				"entity.name.function.constructor.cpp",
+				// C#
+				"entity.name.type.namespace.cs",
+				"entity.name.type.cs"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -401,6 +384,26 @@
 			],
 			"settings": {
 				"foreground": "#7bcbff",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "C# Class and namespace fixes",
+			"scope": [
+				"keyword.other.namespace.cs",
+				"keyword.other.class.cs"
+			],
+			"settings": {
+				"foreground": "#7BCBFF", "fontStyle": ""
+			}
+		},
+		{
+			"name": "C# Objects",
+			"scope": [
+				"variable.other.object.cs"
+			],
+			"settings": {
+				"foreground": "#FFCB6B",
 				"fontStyle": ""
 			}
 		},
@@ -439,7 +442,6 @@
 				"fontStyle": ""
 			}
 		},
-		
 
 		// =======================================================================================
 		// HASKELL SUPPORT
@@ -454,6 +456,7 @@
 				"keyword.other.data.haskell",
 				"keyword.other.deriving.haskell",
 				"keyword.other.type.haskell",
+				"keyword.other.let.haskell"
 			],
 			"settings": {
 				"foreground": "#FF9FEF",
@@ -466,8 +469,8 @@
 				"meta.function.type-declaration.haskell entity.name.function.haskell punctuation.paren.haskell"
 			],
 			"settings": {
-				"foreground": "#FF0000",
-				"fontStyle": "bold"
+				"foreground": "#cdf196",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -480,7 +483,6 @@
 				"fontStyle": ""
 			}
 		},
-
 
 		// =======================================================================================
 		// RUST SYNTAX SUPPORT
@@ -516,7 +518,6 @@
 				"fontStyle": "bold"
 			}
 		},
-
 
 		// =======================================================================================
 		// JAVASCRIPT, TYPESCRIPT
@@ -658,7 +659,7 @@
 				"fontStyle": ""
 			}
 		},
-		
+
 		// =======================================================================================
 		//  MARKUP LANGUAGES (HTML, XML, YML)
 		// =======================================================================================
@@ -728,7 +729,7 @@
 				"meta.function.variable.css variable.argument.css"
 			],
 			"settings": {
-				"foreground": "#FFDB99", 
+				"foreground": "#FFDB99",
 				"fontStyle": ""
 			}
 		},
@@ -808,7 +809,7 @@
 				"keyword.other.sql"
 			],
 			"settings": {
-				"foreground": "#7BCBFF", 
+				"foreground": "#7BCBFF",
 				// "fontStyle": "" ,
 				"fontStyle": "bold"
 			}
@@ -823,7 +824,6 @@
 				"fontStyle": ""
 			}
 		},
-
 		// =======================================================================================
 		// MARKDOWN
 		// =======================================================================================
@@ -877,7 +877,7 @@
 				"fontStyle": "bold"
 			}
 		},
-
+		
 		// =======================================================================================
 		// JSON key level highlighting
 		// =======================================================================================
