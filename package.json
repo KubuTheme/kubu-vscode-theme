@@ -4,14 +4,12 @@
 	"displayName": "Kubu theme",
 	"description": "Kubu theme for VS code",
 	"publisher": "matthijsreyers",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"repository": "https://github.com/KubuTheme/kubu-vscode-theme/",
 	"engines": {
 		"vscode": "^1.1.0"
 	},
-	"scripts": {
-		""
-	},
+	"scripts": { },
 	"categories": [
 		"Themes"
 	],
@@ -21,11 +19,6 @@
 				"label": "Kubu Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Kubu-color-theme.json"
-			},
-			{
-				"label": "Kubu light",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Kubu-light-color-theme.json"
 			}
 		]
 	},

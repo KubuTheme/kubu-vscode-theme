@@ -55,3 +55,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.2.2] - 2023-02-03
 - Fixed broken badges on README.
 - Added syntax highlighting support for C# via `ms-dotnettools.csharp`.
+
+## [1.2.3] - 2024-06-26
+- Fixed minor issues with C++ syntax highlighting,

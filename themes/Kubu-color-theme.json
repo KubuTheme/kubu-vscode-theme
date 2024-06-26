@@ -218,7 +218,10 @@
 				"constant.character.escape",
 				// Rust keywords.
 				"keyword.other.fn.rust",
-				"keyword.other.rust"
+				"keyword.other.rust",
+
+				// C++ 'f' suffix for floating points.
+				"keyword.other.unit.suffix.floating-point.cpp"
 			],
 			"settings": {
 				"foreground": "#7bcbff",
@@ -337,7 +340,8 @@
 			"scope": [
 				"punctuation.separator.scope-resolution.constructor.cpp",
 				"punctuation.separator.colon.access.control.cpp",
-				"meta.function.definition.special.constructor.cpp punctuation.section"
+				"meta.function.definition.special.constructor.cpp punctuation.section",
+				"entity.name.function.operator.member.cpp"
 			],
 			"settings": {
 				"foreground": "#fff",
