@@ -169,6 +169,8 @@
 				// Python
 				"support.function.magic.python",
 				"source.python meta.function-call.python meta.function-call.generic.python",
+				// Coq
+				"keyword.other.definition.coq",
 			],
 			"settings": {
 				"foreground": "#C3E88D",
@@ -219,7 +221,6 @@
 				// Rust keywords.
 				"keyword.other.fn.rust",
 				"keyword.other.rust",
-
 				// C++ 'f' suffix for floating points.
 				"keyword.other.unit.suffix.floating-point.cpp"
 			],
@@ -254,7 +255,9 @@
 				// import keywords QML 
 				"keyword.other.import.qml",
 				// Stupid C#
-				"keyword.other.using.cs"
+				"keyword.other.using.cs",
+				// Coq
+				"keyword.other.module.coq"
 			],
 			"settings": {
 				"foreground": "#ff929b",
@@ -361,7 +364,9 @@
 				"entity.name.function.constructor.cpp",
 				// C#
 				"entity.name.type.namespace.cs",
-				"entity.name.type.cs"
+				"entity.name.type.cs",
+				// Coq
+				"keyword.other.assertion.coq"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -373,7 +378,11 @@
 			"scope": [
 				"storage.type.modifier.access.control.private.cpp",
 				"storage.type.modifier.access.control.public.cpp",
-				"storage.type.modifier.access.control.protected.cpp"
+				"storage.type.modifier.access.control.protected.cpp",
+				// Coq 
+				"keyword.other.proof.coq",
+				"keyword.other.gallina.coq",
+				"keyword.other.vernacular"
 			],
 			"settings": {
 				"foreground": "#FF9FEF",

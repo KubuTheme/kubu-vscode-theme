@@ -21,6 +21,7 @@ Apart from syntax highlighting for all the languages supported in vscode by defa
 - **SWI-Prolog**: coloring for the tokens defined by the `arthurwang.vsc-prolog` extension.
 - **Rust**: coloring for the tokens defined by the `dustypomerleau.rust-syntax` extension.
 - **C#**: coloring for the tokens defined by the `ms-dotnettools.csharp` extension.
+- **Coq**: color for the Coq proving language based on the `ruoz.coq` extension.
 
 <br>
 

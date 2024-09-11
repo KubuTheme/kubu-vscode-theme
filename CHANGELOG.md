@@ -58,3 +58,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.2.3] - 2024-06-26
 - Fixed minor issues with C++ syntax highlighting,
+
+## [1.2.4] - 2024-09-11
+- dded syntax highlighting support for Coq via `ruoz.coq`.

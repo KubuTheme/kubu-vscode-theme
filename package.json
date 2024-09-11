@@ -9,7 +9,7 @@
 	"engines": {
 		"vscode": "^1.1.0"
 	},
-	"scripts": { },
+	"scripts": {},
 	"categories": [
 		"Themes"
 	],
@@ -22,11 +22,9 @@
 			}
 		]
 	},
-	"dependencies": {},
 	"__metadata": {
 		"id": "16110156-5858-4d67-9ae2-e53bafc3841f",
 		"publisherDisplayName": "Matthijs Reyers",
 		"publisherId": "a2657a1b-2224-454b-9c3d-d2a64c1792c9"
 	}
 }
-
