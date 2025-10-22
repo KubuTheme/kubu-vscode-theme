@@ -57,7 +57,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added syntax highlighting support for C# via `ms-dotnettools.csharp`.
 
 ## [1.2.3] - 2024-06-26
-- Fixed minor issues with C++ syntax highlighting,
+- Fixed minor issues with C++ syntax highlighting.
 
 ## [1.2.4] - 2024-09-11
-- dded syntax highlighting support for Coq via `ruoz.coq`.
+- Added syntax highlighting support for Coq via `ruoz.coq`.
+
+## [1.2.5] - 
+- Fixed C++ `using` keyword having no  yntax highlighting.
