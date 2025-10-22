@@ -149,8 +149,9 @@
 				"support.type.primitive.ts",
 				"support.type.builtin.ts",
 				// Microsoft C#
-				"keyword.type.cs"
-
+				"keyword.type.cs",
+				// Kotlin
+				"keyword.other.kotlin",
 			],
 			"settings": {
 				"foreground": "#7BCBFF",
@@ -290,7 +291,10 @@
 				"meta.function.definition.special.constructor.cpp meta.head.function.definition.special.constructor.cpp entity.name.function.constructor.cpp entity.name.function.definition.special.constructor.cpp",
 				// QML
 				"support.class.qml",
-				"variable.other.readwrite.js"
+				"variable.other.readwrite.js",
+				// Kotlin
+				"entity.name.class.kotlin",
+				"support.class.kotlin"
 			],
 			"settings": {
 				"foreground": "#9fece7",
@@ -362,6 +366,7 @@
 				"meta.block.class.cpp meta.qualified_type.cpp entity.name.scope-resolution.cpp",
 				"entity.name.type.constructor",
 				"entity.name.function.constructor.cpp",
+				"keyword.other.using.directive.cpp",
 				// C#
 				"entity.name.type.namespace.cs",
 				"entity.name.type.cs",
@@ -529,6 +534,19 @@
 			"settings": {
 				"foreground": "#ff929b",
 				"fontStyle": "bold"
+			}
+		},
+
+		// 
+		// KOTLIN
+		// 
+		{
+			"name": "Kotlin function parameter fix",
+			"scope": [
+				"variable.parameter.function.kotlin"
+			],
+			"settings": {
+				"foreground": "#ffffff",
 			}
 		},
 
